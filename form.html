@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style type="text/css">
+		h1{
+			text-align: center;
+		}
+	</style>
+</head>
+<body >
+	<h1 >REGISTRATION</h1>
+	
+  <form>
+  	<fieldset>
+  		<legend><strong>BASIC DETAILS</strong></legend>
+  		<table>
+  		<tr><td>Form Number</td> <td><input type="number" name="form_num" placeholder="eg:123143"></td></tr>
+  		<tr><td>Full Name</td><td><input type="text" name="Full_name" placeholder="eg:Aman Bhagat"></td></tr>
+  	    <tr><td>Roll Number</td><td><input type="number" name="roll" placeholder="eg:1906073"></td></tr>
+  	
+  	
+  	<tr>
+  		<td>  	<label for="gender">
+  		Gender:
+  	   </label></td>
+  	   <td><input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+  	<input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+  	<input type="radio" id="other" name="gender" value="other"><label for="other">other</label></td>
+  </tr>
+
+  	<tr><td><label for="DOB">DOB</label></td>
+  	<td><input type="date" id="DOB" name="DOB" value="DOB"></td></tr>
+
+  	<tr><td><label for="pwd">PWD</label></td>
+         <td><label for="Yes">YES</label><input type="radio" id="yes" name="pwd" value ="Yes">
+         <label for="No">NO</label><input type="radio" id="No" name="pwd" value ="No"> </td>
+  	</tr>
+  	<tr>
+  		<td><label for="Category">Category</label></td>
+  		<td>
+  			<select id="Category">
+  				<option value="General">General</option>
+  				<option value="OBC">OBC</option>
+  				<option value="SC/ST">SC/ST</option>
+  			</select>
+  		</td>
+  	</tr>
+  	</table>
+
+  	<label for="address">Address</label><br>
+  	<textarea id="address"></textarea>
+  	<h4>PLEASE INPUT THE CORRECT PIN CODE </h4>
+  	<table>
+  		<tr>
+  			<td><label for="pin">PIN CODE </label></td>
+  			<td><input type="number" name="pin" placeholder="eg:853204"></td>
+  		</tr>
+  		<tr>
+  			<td><label for="s_no.">PHONE NUMBER OF STUDENT </label></td>
+  			<td><input type="number" name="s_no." placeholder="eg:9334680526"></td>
+  		</tr>
+  		<tr>
+  			<td><label for="g_no.">PHONE NUMBER OF GUARDIAN </label></td>
+  			<td><input type="number" name="no." placeholder="eg:9334680526"></td>
+  		</tr>
+  	</table>
+  	</fieldset>
+  	<br>
+  	<fieldset>
+  		<legend><strong>ACADMIC DETAILS</strong></legend>
+  		<table>
+  			<tr>
+  				<td><label for="Course">COURSE</label></td>
+  				<td>
+  					<select id="Course">
+  						<option value="btech">B.Tech</option>
+  						<option value="imsc">IMSC</option>
+  						<option value="M.ech">M.Tech</option>
+  					</select>
+  				</td>
+  			</tr>
+  			<tr>
+  				<td><label for="branch">Branch</label></td>
+  				<td><input type="text" name="branch" placeholder="eg:CSE"></td>
+  			</tr>
+  			<tr>
+  				<td><label for="sem">Semester</label></td>
+  				<td>
+  					<select id="sem">
+  						<option value="1">1st</option>
+  						<option value="2">2nd</option>
+  						<option value="3">3rd</option>
+  						<option value="4">4th</option>
+  					</select>
+  					(for which allotment will be done)
+  				</td>
+  			</tr>
+  			<tr>
+  				<td><label for="AIR">All India Rank</label></td>
+  				<td><input type="number" name="AIR" placeholder="eg:11000">(2018 JEE Main/GATE)</td>
+  			</tr>
+  			<tr>
+  				<td><label for="CAIR">Category Rank</label></td>
+  				<td><input type="number" name="CAIR" placeholder="eg:3500">(2018 JEE Main/GATE)</td>
+  			</tr>
+  			<tr>
+  				<td><label for="cgpa">CGPA</label></td>
+  				<td><input type="number" name="cgpa" placeholder="eg:8.66"></td>
+  			</tr>
+  			<tr>
+  				<td><label for="back">Backlog</label></td>
+  				<td><label for="yes">YES</label><input type="radio" id="yes" name="Backlog" value="yes">
+  					<label for="no">NO</label><input type="radio" id="no" name="Backlog" value="no">
+  				</td>
+  			</tr>
+  			<tr>
+  				<td><label for="hostel">Hostel Accommodation</label></td>
+  				<td><label for="yes">YES</label><input type="radio" id="yes" name="Backlog" value="yes">
+  					<label for="no">NO</label><input type="radio" id="no" name="Backlog" value="no">
+  					(IF ANY)
+  				</td>
+  			</tr>
+  			<tr>
+  				<td><label for="hostelNmae">Name Of Hostel</label></td>
+  				<td><input type="text" name="hostelNmae" placeholder="eg:Ganga Hostel"></td>
+  			</tr>
+  			<tr>
+  				<td><label for="room">Room Number</label></td>
+  				<td><input type="number" name="room" placeholder="eg:124"></td>
+  			</tr>
+  		</table>
+  	</fieldset>
+<br>
+  	<fieldset>
+  		<legend><strong>ACCOUNT DETAILS FOR REFUNDING PROCESS</strong></legend>
+  		<table>
+  			<tr>
+  				<td><label for ="acc_h_n">Account Holder Name</label></td>
+  				<td><input type="text" name="acc_h_n" placeholder="eg:Aman Bhagat">(As per Bank Passbook)</td>
+  			</tr>
+  			<tr>
+  				<td><label for ="acc_n">Account Number </label></td>
+  				<td><input type="number" name="acc_n" placeholder="eg:1238388828"></td>
+  			</tr>
+  			<tr>
+  				<td><label for ="ifsc">IFSC CODE </label></td>
+  				<td><input type="number" name="ifsc" placeholder="eg:873401"></td>
+  			</tr>
+  			<tr>
+  				<td><label for ="bank">Branch Name</label></td>
+  				<td><input type="text" name="bank" placeholder="eg:Dena Bank"></td>
+  			</tr>
+            <tr>
+  				<td><label for ="bank_branch">Bank Branch</label></td>
+  				<td><input type="text" name="bank" placeholder="eg:NIT More Branch"></td>
+  			</tr>
+  		</table>
+  	</fieldset>
+  	<br>
+  </form>  	
+  	
+  
+  
+</body>
+</html>
